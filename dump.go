@@ -6,7 +6,6 @@ import (
 	"reflect"
 )
 
-// DD performs dump and die
 func DD(v interface{}) {
 	t := reflect.TypeOf(v)
 	if t == nil {
