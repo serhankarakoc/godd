@@ -1,4 +1,4 @@
-package go-dd
+package godd
 
 import (
 	"fmt"
