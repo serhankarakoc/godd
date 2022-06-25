@@ -21,11 +21,11 @@ func main() {
 		Age  int
 	}
 
-	jack := Person{
+	test := Person{
 		Name: "test",
 		Age:  10,
 	}
-	godd.DD(jack)
+	godd.DD(test)
 }
 
 // result
