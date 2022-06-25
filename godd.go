@@ -48,7 +48,7 @@ func showType(t interface{}) {
 }
 
 func showBaseType(t interface{}) {
-	fmt.Printf("Underlying Type: %v\n", t)
+	fmt.Printf("Main Type: %v\n", t)
 }
 
 func showValue(v interface{}) {
