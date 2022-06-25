@@ -16,23 +16,23 @@ import (
 )
 
 func main() {
-	type Person struct {
+	type Dog struct {
 		Name string
 		Age  int
 	}
 
-	test := Person{
-		Name: "test",
-		Age:  10,
+	leo := Animal {
+		Name: "leo",
+		Age:  5,
 	}
 	godd.DD(test)
 }
 
 // result
 
-#Type: main.Person
+#Type: main.Dog
 #Underlying Type: struct
-#Value: {test 10}
+#Value: {leo 5}
 ```
 
 
