@@ -12,9 +12,11 @@ func DD(v interface{}) {
 		printInterface()
 		os.Exit(0)
 	}
+	
 	k := t.Kind()
 	val := reflect.ValueOf(v)
 	kf := fmt.Sprintf("%v", k)
+	
 	if kf == "struct" {
 		printType(t)
 		printBaseType(k)
