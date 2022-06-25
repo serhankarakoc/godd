@@ -25,7 +25,7 @@ func main() {
 		Name: "leo",
 		Age:  5,
 	}
-	godd.DD(test)
+	godd.DD(leo)
 }
 
 // result
