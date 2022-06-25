@@ -1,3 +1,3 @@
-module github.com/serhankarakoc/go-dd
+module github.com/serhankarakoc/godd
 
 go 1.18
