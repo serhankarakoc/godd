@@ -28,9 +28,9 @@ func main() {
 }
 
 // result
-#Type: main.Animal
-#Underlying Type: struct
-#Value: {leo 5}
+Type: main.Animal
+Underlying Type: struct
+Value: {leo 5}
 ```
 
 
@@ -48,8 +48,8 @@ func main() {
 }
 
 // result
-#Type: string
-#Value: test string
+Type: string
+Value: test string
 ```
 
 Dump Numeric:
@@ -66,8 +66,8 @@ func main() {
 }
 
 // result
-#Type: float64
-#Value: 123.45
+Type: float64
+Value: 123.45
 ```
 
 Dump Channel:
@@ -84,9 +84,9 @@ func main() {
 }
 
 // result
-#Type: chan int
-#Underlying Type: chan
-#Value: <nil>
+Type: chan int
+Underlying Type: chan
+Value: <nil>
 ```
 
 Dump Interface:
@@ -106,5 +106,5 @@ func main() {
 }
 
 // result
-#Type: interface
+Type: interface
 ```
