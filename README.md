@@ -1,5 +1,4 @@
 # Golang debug dump and die (dd)
-Golang debug dump and die (dd)
 
 # Install
 ```bash
