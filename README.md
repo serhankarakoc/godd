@@ -16,7 +16,7 @@ import (
 )
 
 func main() {
-	type Dog struct {
+	type Animal struct {
 		Name string
 		Age  int
 	}
@@ -30,7 +30,7 @@ func main() {
 
 // result
 
-#Type: main.Dog
+#Type: main.Animal
 #Underlying Type: struct
 #Value: {leo 5}
 ```
