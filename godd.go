@@ -8,6 +8,7 @@ import (
 
 func DD(v interface{}) {
 	t := reflect.TypeOf(v)
+	
 	if t == nil {
 		printInterface()
 		os.Exit(0)
