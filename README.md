@@ -3,7 +3,7 @@ Golang debug dump and die (dd)
 
 # Install
 ```bash
-go get github.com/serhankarakoc/go-dd
+go get github.com/serhankarakoc/godd
 ```
 
 # Usage 
@@ -12,7 +12,7 @@ Dump Struct:
 package main
 
 import (
-	"github.com/serhankarakoc/go-dd"
+	"github.com/serhankarakoc/godd"
 )
 
 func main() {
@@ -25,7 +25,7 @@ func main() {
 		Name: "jack",
 		Age:  32,
 	}
-	dump.DD(jack)
+	godd.DD(jack)
 }
 
 // result
@@ -41,12 +41,12 @@ Dump Strings:
 package main
 
 import (
-	"github.com/serhankarakoc/go-dd"
+	"github.com/serhankarakoc/godd"
 )
 
 func main() {
 	t := "this is a test string"
-	dump.DD(t)
+	godd.DD(t)
 }
 
 // result
@@ -60,12 +60,12 @@ Dump Numeric:
 package main
 
 import (
-	"github.com/serhankarakoc/go-dd"
+	"github.com/serhankarakoc/godd"
 )
 
 func main() {
 	t := 123.43
-	dump.DD(t)
+	godd.DD(t)
 }
 
 // result
@@ -79,12 +79,12 @@ Dump Channel:
 package main
 
 import (
-	"github.com/serhankarakoc/go-dd"
+	"github.com/serhankarakoc/godd"
 )
 
 func main() {
 	var c chan int
-	dump.DD(c)
+	godd.DD(c)
 }
 
 // result
@@ -99,7 +99,7 @@ Dump Interface:
 package main
 
 import (
-	"github.com/serhankarakoc/go-dd"
+	"github.com/serhankarakoc/godd"
 )
 
 func main() {
@@ -107,7 +107,7 @@ func main() {
 		get()
 	}
 	var g Getter
-	dump.DD(g)
+	godd.DD(g)
 }
 
 // result
