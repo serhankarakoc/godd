@@ -1,4 +1,4 @@
-package dump
+package go-dd
 
 import (
 	"fmt"
@@ -9,7 +9,6 @@ import (
 func DD(v interface{}) {
 	t := reflect.TypeOf(v)
 	if t == nil {
-		// handle interface type
 		printInterface()
 		os.Exit(0)
 	}
@@ -31,7 +30,6 @@ func DD(v interface{}) {
 		printValue(val)
 		os.Exit(0)
 	} else {
-		// for string and numeric types
 		printType(t)
 		printValue(val)
 		os.Exit(0)
