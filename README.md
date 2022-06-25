@@ -29,7 +29,7 @@ func main() {
 
 // result
 Type: main.Animal
-Underlying Type: struct
+Main Type: struct
 Value: {leo 5}
 ```
 
@@ -85,7 +85,7 @@ func main() {
 
 // result
 Type: chan int
-Underlying Type: chan
+Main Type: chan
 Value: <nil>
 ```
 
