@@ -1,3 +1,3 @@
-module github.com/harranali/dump
+module github.com/serhankarakoc/go-dd
 
-go 1.16
+go 1.18
