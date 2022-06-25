@@ -28,7 +28,6 @@ func main() {
 }
 
 // result
-
 #Type: main.Animal
 #Underlying Type: struct
 #Value: {leo 5}
@@ -49,7 +48,6 @@ func main() {
 }
 
 // result
-
 #Type: string
 #Value: test string
 ```
@@ -68,7 +66,6 @@ func main() {
 }
 
 // result
-
 #Type: float64
 #Value: 123.45
 ```
@@ -87,7 +84,6 @@ func main() {
 }
 
 // result
-
 #Type: chan int
 #Underlying Type: chan
 #Value: <nil>
@@ -110,6 +106,5 @@ func main() {
 }
 
 // result
-
 #Type: interface
 ```
