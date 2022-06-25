@@ -22,8 +22,8 @@ func main() {
 	}
 
 	jack := Person{
-		Name: "jack",
-		Age:  32,
+		Name: "test",
+		Age:  10,
 	}
 	godd.DD(jack)
 }
@@ -32,7 +32,7 @@ func main() {
 
 #Type: main.Person
 #Underlying Type: struct
-#Value: {jack 32}
+#Value: {test 10}
 ```
 
 
@@ -45,14 +45,14 @@ import (
 )
 
 func main() {
-	t := "this is a test string"
+	t := "test string"
 	godd.DD(t)
 }
 
 // result
 
 #Type: string
-#Value: this is a test string
+#Value: test string
 ```
 
 Dump Numeric:
@@ -64,14 +64,14 @@ import (
 )
 
 func main() {
-	t := 123.43
+	t := 123.45
 	godd.DD(t)
 }
 
 // result
 
 #Type: float64
-#Value: 123.43
+#Value: 123.45
 ```
 
 Dump Channel:
