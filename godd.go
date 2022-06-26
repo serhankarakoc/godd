@@ -6,8 +6,8 @@ import (
 	"reflect"
 )
 
-func DD(v interface{}) {
-	t := reflect.TypeOf(v)
+func DD(i interface{}) {
+	t := reflect.TypeOf(i)
 	
 	if t == nil {
 		showInterface()
@@ -15,26 +15,26 @@ func DD(v interface{}) {
 	}
 	
 	k := t.Kind()
-	val := reflect.ValueOf(v)
-	kf := fmt.Sprintf("%v", k)
+	v := reflect.ValueOf(i)
+	kt := fmt.Sprintf("%i", k)
 	
-	if kf == "struct" {
+	if kt == "struct" {
 		showType(t)
 		showBaseType(k)
-		showValue(val)
+		showValue(v)
 		os.Exit(0)
-	} else if kf == "func" {
+	} else if kt == "func" {
 		showType(t)
 		showBaseType(k)
 		os.Exit(0)
-	} else if kf == "chan" {
+	} else if kt == "chan" {
 		showType(t)
 		showBaseType(k)
-		showValue(val)
+		showValue(v)
 		os.Exit(0)
 	} else {
 		showType(t)
-		showValue(val)
+		showValue(v)
 		os.Exit(0)
 	}
 }
@@ -44,13 +44,13 @@ func showInterface() {
 }
 
 func showType(t interface{}) {
-	fmt.Printf("Type: %v\n", t)
+	fmt.Printf("Type: %i\n", t)
 }
 
 func showBaseType(t interface{}) {
-	fmt.Printf("Main Type: %v\n", t)
+	fmt.Printf("Main Type: %i\n", t)
 }
 
-func showValue(v interface{}) {
-	fmt.Printf("Value: %v\n", v)
+func showValue(i interface{}) {
+	fmt.Printf("Value: %i\n", i)
 }
